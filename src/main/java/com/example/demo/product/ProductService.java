@@ -39,4 +39,16 @@ class ProductService {
         return ResponseEntity.ok(response);
 
     }
+
+    @PatchMapping("/{productId}")
+    @Transactional
+    public void updateProduct(
+            @PathVariable Long productId,
+            @RequestBody UpdateProductRequest request) {
+        final Product product = productPort.getProduct(productId);
+
+        product.update(request.name(), request.price(), request.discountPolicy());
+
+        productPort.save(product);
+    }
 }
