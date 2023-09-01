@@ -1,4 +1,4 @@
-package com.example.demo.product;
+package com.example.demo.oreder;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
@@ -6,6 +6,5 @@ import org.springframework.stereotype.Repository;
 import java.util.HashMap;
 import java.util.Map;
 
-public interface ProductRepository extends JpaRepository<Product, Long> {
-
+interface OrderRepository extends JpaRepository<Order, Long> {
 }

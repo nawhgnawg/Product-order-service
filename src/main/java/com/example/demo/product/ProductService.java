@@ -9,6 +9,7 @@ import javax.transaction.Transactional;
 
 @RestController
 @RequestMapping("/products")
+public
 class ProductService {
     final private ProductPort productPort;
 

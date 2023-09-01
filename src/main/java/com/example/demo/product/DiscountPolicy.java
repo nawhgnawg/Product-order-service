@@ -1,5 +1,5 @@
 package com.example.demo.product;
 
-enum DiscountPolicy {
+public enum DiscountPolicy {
     NONE;
 }
