@@ -1,10 +1,9 @@
-package com.example.demo.oreder;
+package com.example.demo.payment;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;
 import java.util.Map;
-
-public interface OrderRepository extends JpaRepository<Order, Long> {
+interface PaymentRepository extends JpaRepository<Payment, Long> {
 }

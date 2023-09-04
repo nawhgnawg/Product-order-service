@@ -10,9 +10,12 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.transaction.Transactional;
+
 
 @RestController
 @RequestMapping("/orders")
+public
 class OrderService {
     private final OrderPort orderPort;
 
@@ -22,6 +25,7 @@ class OrderService {
 
 
     @PostMapping
+    @Transactional
     public ResponseEntity<Void> createOrder(
             @RequestBody final CreateOrderRequest request) {
         final Product product = orderPort.getProductById(request.productId());
