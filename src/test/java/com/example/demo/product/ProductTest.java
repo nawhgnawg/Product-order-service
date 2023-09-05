@@ -1,5 +1,7 @@
 package com.example.demo.product;
 
+import com.example.demo.product.domain.DiscountPolicy;
+import com.example.demo.product.domain.Product;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;

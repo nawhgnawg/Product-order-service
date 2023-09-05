@@ -1,6 +1,6 @@
-package com.example.demo.payment;
+package com.example.demo.payment.domain;
 
-import com.example.demo.oreder.Order;
+import com.example.demo.oreder.domain.Order;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -11,6 +11,7 @@ import javax.persistence.*;
 @Entity
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
+public
 class Payment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

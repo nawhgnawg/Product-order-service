@@ -1,6 +1,6 @@
 package com.example.demo.oreder;
 
-import com.example.demo.oreder.CreateOrderRequest;
+import com.example.demo.oreder.application.service.CreateOrderRequest;
 import io.restassured.RestAssured;
 import io.restassured.response.ExtractableResponse;
 import io.restassured.response.Response;

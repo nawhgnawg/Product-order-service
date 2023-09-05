@@ -1,10 +1,10 @@
-package com.example.demo.oreder;
+package com.example.demo.oreder.application.service;
 
-import com.example.demo.product.Product;
+import com.example.demo.oreder.domain.Order;
+import com.example.demo.oreder.application.port.OrderPort;
+import com.example.demo.product.domain.Product;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

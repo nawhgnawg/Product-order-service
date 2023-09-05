@@ -1,6 +1,6 @@
-package com.example.demo.oreder;
+package com.example.demo.oreder.domain;
 
-import com.example.demo.product.Product;
+import com.example.demo.product.domain.Product;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

@@ -1,7 +1,9 @@
-package com.example.demo.oreder;
+package com.example.demo.oreder.adapter;
 
-import com.example.demo.product.Product;
-import com.example.demo.product.ProductRepository;
+import com.example.demo.oreder.domain.Order;
+import com.example.demo.oreder.application.port.OrderPort;
+import com.example.demo.product.domain.Product;
+import com.example.demo.product.adapter.ProductRepository;
 import org.springframework.stereotype.Component;
 
 @Component

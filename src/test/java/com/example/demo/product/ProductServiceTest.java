@@ -1,13 +1,13 @@
 package com.example.demo.product;
 
-import org.checkerframework.checker.units.qual.A;
-import org.junit.jupiter.api.BeforeEach;
+import com.example.demo.product.application.service.GetProductResponse;
+import com.example.demo.product.application.service.ProductService;
+import com.example.demo.product.application.service.UpdateProductRequest;
+import com.example.demo.product.application.port.ProductPort;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.ResponseEntity;
-
-import java.awt.color.ProfileDataException;
 
 import static com.example.demo.product.ProductSteps.상품수정요청_생성;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
